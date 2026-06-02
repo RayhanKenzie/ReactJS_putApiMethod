@@ -25,6 +25,10 @@ function Navbar() {
                                 <li>
                                     <Link to="/contact" className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"> Contacts </Link>
                                 </li>
+
+                                <li>
+                                    <Link to="/delete" className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"> Delete </Link>
+                                </li>
                             </ul>
                         </nav>
 

@@ -33,3 +33,17 @@ export const updateData = async (id, data) => {
         throw error
     }
 }
+
+// DELETE DATA
+export const deleteData = async (id) => {
+    try {
+        const respon = axios.delete(
+            `${import.meta.env.VITE_API_URL2}${import.meta.env.VITE_API_KEY}/users/${id}`
+        );
+        console.log(respon)
+        return respon
+    } catch (error) {
+        console.log(error)
+        throw error
+    }
+}
